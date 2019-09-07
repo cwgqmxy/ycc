@@ -10,10 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
+//前台控制器
+Route::get('/','Welcome\IndexController@index');
 //获取所有提交方法
 Route::any('consoles/login','Consoles\LoginController@login');
 // 验证码
